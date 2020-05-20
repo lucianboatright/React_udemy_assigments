@@ -1,26 +1,38 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
+import UserInput from './UserInput/userInput'
+import UserOutput from './UserOutput/userOutput'
+
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
 
+class App extends Component {
+
+  state = { 
+    inputText: 'Text to be Replaced' 
+  }
+  
+  wordInputHandeler = (event) => {
+    this.setState (
+        {inputText: event.target.value};
+    )
+  }
+
+  render () {
+    
+    return (
+      <div className="App">
+        <h1>User input below</h1>
+        <UserInput
+          // changed={this.wordInputHandeler} 
+        />
+        <h1>User Output below</h1>
+        <UserOutput
+          inputText={this.state.input[0].inputText}
+          changed={this.wordInputHandeler}> try somting
+        </UserOutput>
+      </div>
+    );
+
+  }
+}
 export default App;

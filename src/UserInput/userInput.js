@@ -1,11 +1,11 @@
 import React from 'react'
-import './Userinput.css'
+// import './Userinput.css'
 
 const userInput = (props) => {
     return (
         <div>
-            <p>Some liines of text before the entry box</p>
-            <input type='text' onChange={props.change} value={'Enter text Here'} />
+            <p>Some lines of text before the entry box</p>
+            <input type='text' onChange={props.changed} value={props.inputText}/>
         </div>
     )
 }
