@@ -1,4 +1,5 @@
 import React from 'react'
+import './userOutput.css'
 // import './Userinput.css'
 
 const userOutput = (props) => {

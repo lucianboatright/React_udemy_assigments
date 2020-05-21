@@ -26,9 +26,8 @@ class App extends Component {
           changed={this.wordInputHandeler}
         />
         <h1>User Output below</h1>
-        <UserOutput
-          inputText={this.state.inputText}> try somting
-        </UserOutput>
+        <UserOutput inputText={this.state.inputText} /> 
+        <UserOutput inputText={this.state.inputText} /> 
       </div>
     );
 
