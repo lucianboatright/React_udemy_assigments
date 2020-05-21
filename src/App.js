@@ -13,7 +13,7 @@ class App extends Component {
   
   wordInputHandeler = (event) => {
     this.setState (
-        {inputText: event.target.value};
+        {inputText: event.target.value},
     )
   }
 
@@ -23,12 +23,11 @@ class App extends Component {
       <div className="App">
         <h1>User input below</h1>
         <UserInput
-          // changed={this.wordInputHandeler} 
+          changed={this.wordInputHandeler}
         />
         <h1>User Output below</h1>
         <UserOutput
-          inputText={this.state.input[0].inputText}
-          changed={this.wordInputHandeler}> try somting
+          inputText={this.state.inputText}> try somting
         </UserOutput>
       </div>
     );

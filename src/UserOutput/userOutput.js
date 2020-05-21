@@ -3,7 +3,7 @@ import React from 'react'
 
 const userOutput = (props) => {
     return (
-        <div>
+        <div className="UserOutput">
             <p>I am the text {props.inputText} </p>
 
         </div>
