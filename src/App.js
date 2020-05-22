@@ -4,7 +4,6 @@ import UserOutput from './UserOutput/userOutput'
 
 import './App.css';
 
-
 class App extends Component {
 
   state = { 

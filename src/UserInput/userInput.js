@@ -1,6 +1,7 @@
 import React from 'react'
 import './userInput.css'
 
+// userinput component
 const userInput = (props) => {
     return (
         <div>
@@ -9,6 +10,5 @@ const userInput = (props) => {
         </div>
     )
 }
-
 
 export default userInput
