@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import UserInput from './UserInput/userInput'
 import UserOutput from './UserOutput/userOutput'
+import UserOutputLength from './UserOutputLength/userOutputLength'
 
 import './App.css';
 
@@ -26,7 +27,7 @@ class App extends Component {
         />
         <h1>User Output below</h1>
         <UserOutput inputText={this.state.inputText} /> 
-        <UserOutput inputText={this.state.inputText} /> 
+        <UserOutputLength inputText={this.state.inputText} /> 
       </div>
     );
 
