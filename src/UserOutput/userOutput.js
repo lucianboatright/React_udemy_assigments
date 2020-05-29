@@ -11,5 +11,4 @@ const userOutput = (props) => {
     )
 }
 
-
 export default userOutput

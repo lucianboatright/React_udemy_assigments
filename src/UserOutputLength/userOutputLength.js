@@ -6,9 +6,9 @@ const userOutputLength = (props) => {
         <div className="UserOutputLength">
             <p>I am length of the text: {props.inputText.length} </p>
 
+
         </div>
     )
 }
-
 
 export default userOutputLength

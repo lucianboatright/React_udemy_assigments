@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-// import UserInput from './UserInput/userInput'
-// import UserOutput from './UserOutput/userOutput'
-// import UserOutputLength from './UserOutputLength/userOutputLength'
+import Validation from "./ValidationComponent/validationComponent"
+
 
 import './App.css';
+import validation from './ValidationComponent/validationComponent';
 
 class App extends Component {
   state = {
@@ -32,7 +32,7 @@ class App extends Component {
         <p>
           {this.state.userInput}
         </p>
-
+        <Validation inputLength={this.state.userInput.length} />
         {/* <UserInput
           changed={this.wordInputHandeler}
         />
