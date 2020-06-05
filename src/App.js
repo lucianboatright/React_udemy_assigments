@@ -3,14 +3,14 @@ import Validation from "./ValidationComponent/validationComponent"
 
 
 import './App.css';
-import validation from './ValidationComponent/validationComponent';
+// import validation from './ValidationComponent/validationComponent';
 
 class App extends Component {
   state = {
     userInput: ''
   }
   inputChangeHandler = (event) => {
-    this.setState (
+    this.setState(
       {userInput: event.target.value}
   )}
 
@@ -22,7 +22,7 @@ class App extends Component {
 
   render () {
 
-    // if (this.state.inputText.length)
+    // if (this.state.inputText.length) comment 
     
     return (
       <div className="App">
